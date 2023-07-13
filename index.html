@@ -86,22 +86,22 @@
         // Create a map centered around Corner Brook
         const map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 48.9444, lng: -57.9266 },
-          zoom: 13,
+          zoom: 9,
+          // disableDefaultUI: true,
+          gestureHandling: "cooperative",
         });
   
         // Define the municipalities and their coordinates
         const municipalities = [
-          { name: "Corner Brook", coordinates: { lat: 48.9556, lng: -57.9336 } },
-          { name: "Lark Harbour", coordinates: { lat: 49.0556, lng: -58.1132 } },
-          { name: "York Harbour", coordinates: { lat: 49.0537, lng: -58.1275 } },
-          { name: "Glenburnie-Birchy Head-Shoal Brook", coordinates: { lat: 49.1673, lng: -58.2333 } },
-          { name: "Irishtown-Summerside", coordinates: { lat: 48.9709, lng: -57.8668 } },
-          { name: "Meadows", coordinates: { lat: 48.9581, lng: -57.9358 } },
-          { name: "Mount Moriah", coordinates: { lat: 48.9616, lng: -57.9054 } },
-          { name: "Massey Drive", coordinates: { lat: 48.9689, lng: -57.8659 } },
-          { name: "Humber Valley Resort", coordinates: { lat: 48.9294, lng: -57.8782 } },
-          { name: "Irishtown", coordinates: { lat: 48.9806, lng: -57.8774 } },
-          { name: "Cox's Cove", coordinates: { lat: 49.1232, lng: -58.0257 } }
+          { name: "Corner Brook", coordinates: { lat: 48.95225414, lng: -57.94817734 } },
+          { name: "Lark Harbour", coordinates: { lat: 49.10219275, lng: -58.37066174 } },
+          { name: "York Harbour", coordinates: { lat: 49.06204797, lng: -58.37945938 } },
+          { name: "Irishtown-Summerside", coordinates: { lat: 48.97614759, lng: -57.96632195 } },
+          { name: "Meadows", coordinates: { lat: 48.99415535, lng: -58.05656433 } },
+          { name: "Mount Moriah", coordinates: { lat: 48.96529372, lng: -58.04386139 } },
+          { name: "Massey Drive", coordinates: { lat: 48.93622623, lng: -57.89533138 } },
+          { name: "Gillams", coordinates: { lat: 49.01420961, lng: -58.06909561 } },
+          { name: "Cox's Cove", coordinates: { lat: 49.12119466, lng: -58.07757568 } }
         ];
   
         // Add markers for each municipality
