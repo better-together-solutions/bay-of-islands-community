@@ -66,18 +66,14 @@
     
       <div class="container mt-5">
           <h2>Communities in the Bay of Islands</h2>
-          <div class="row">
-              <div class="col-md-12">
-                <div class="d-md-flex flex-md-row-reverse">
-                  <!-- Use Vue.js to iterate over the municipalities array -->
-                  <div v-for="(municipality, index) in municipalities" :key="index" class="col-md-6">
-                    <div class="community-item">
-                      <img :src="`/municipality${index % 2 + 1}.jpg`" :alt="municipality.name">
-                      <div>
-                        <h5 class="mt-0">{{ municipality.name }}</h5>
-                        <p>Some description about {{ municipality.name }}.</p>
-                      </div>
-                    </div>
+          <div class="row d-md-flex flex-md-row-reverse">
+             <!-- Use Vue.js to iterate over the municipalities array -->
+              <div v-for="(municipality, index) in municipalities" :key="index" class="col-md-6">
+                <div class="community-item">
+                  <img :src="`/municipality${index % 2 + 1}.jpg`" :alt="municipality.name">
+                  <div>
+                    <h5 class="mt-0">{{ municipality.name }}</h5>
+                    <p>Some description about {{ municipality.name }}.</p>
                   </div>
                 </div>
               </div>
