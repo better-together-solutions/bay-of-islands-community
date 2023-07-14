@@ -55,20 +55,20 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="communities.html">Communities</a>
             </li>
+<!--             <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li> -->
           </ul>
         </div>
       </nav>
     
       <div class="container mt-5">
           <h2>Communities in the Bay of Islands</h2>
-          <div class="row d-md-flex flex-md-row-reverse">
+          <div class="row d-md-flex">
              <!-- Use Vue.js to iterate over the municipalities array -->
-              <div v-for="(municipality, index) in municipalities" :key="index" class="col-md-6">
+              <div v-for="(municipality, index) in municipalities" :key="index" class="col-md-6" :title="municipality.name">
                 <div class="community-item">
                   <img :src="`/municipality${index % 2 + 1}.jpg`" :alt="municipality.name">
                   <div>
